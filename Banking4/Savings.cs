@@ -8,10 +8,11 @@ namespace Banking4 {
 	class Savings : Account {
 
 		public decimal IntRate { get; set; }
+		//public decimal Balance { get; set; }
 
 		public void CalcInterest(int months) {
 			decimal monthlyIntRate = IntRate / 12;
-			decimal interest = GetBalance() * monthlyIntRate * months;
+			decimal interest = Balance * monthlyIntRate * months;
 			Deposit(interest);
 		}
 

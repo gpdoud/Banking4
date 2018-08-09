@@ -28,7 +28,7 @@ namespace Banking4 {
 			Checking c1 = new Checking("chk1", "First Checking");
 			c1.Deposit(1000);
 			c1.WriteCheck("Denise", 100);
-
+			c1.Withdraw(100);
 
 			List<Account> accounts = new List<Account> { c1, s1 };
 			decimal totalAllAccounts = 0;
